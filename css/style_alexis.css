@@ -2,6 +2,7 @@
 
 body{
 	margin: 0;
+	height: 100vh;
 }
 
 * {
@@ -77,3 +78,31 @@ footer p {
 	align-self: center;
 }
 /*Fin footer*/
+
+/*Page partenaire*/
+
+#partenaires {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	text-align: center;
+	background-color: #231f20;
+	color: #fff3ce;
+	min-height: 83.6vh;
+}
+
+#partenaires h1 {
+	font-family: 'Raleway';
+	font-weight: 700;
+	margin-top: 5%;
+	letter-spacing: 2px;
+}
+
+#partenaires #partenaires_container {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	
+}
+
+/*Fin page partenaire*/
