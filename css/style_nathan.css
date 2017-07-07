@@ -1,1 +1,22 @@
-/*Debut*/
+/*Petits bails*/
+
+body{
+	margin: 0;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+a {
+	background-color: transparent;
+	color: #12acf0;
+	text-decoration: none;
+}
+
+a:hover, a:active {
+	outline: 0;
+}
+
+/*Début header*/
+
