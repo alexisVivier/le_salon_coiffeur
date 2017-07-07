@@ -1,1 +1,44 @@
-/*Debut*/
+/*Petits bails*/
+
+body{
+	margin: 0;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+a {
+	background-color: transparent;
+	color: #12acf0;
+	text-decoration: none;
+}
+
+a:hover, a:active {
+	outline: 0;
+}
+
+/*Debut footer*/
+
+footer {
+	color: #FFF3CE;
+	background-color: #231F20;
+}
+
+/*Div qui contient les 3 parties du footer pour les disposer en flexbox et avec un margin auto pour la centrer*/
+
+#footer_container {
+	width: 40%;
+	margin: auto;
+	display: flex;
+	justify-content: space-around;
+	flex-direction: row;
+}
+
+/*Div qui contient le coyright en SVG et les noms*/
+
+#copyright_div {
+	
+}
+
+/*Fin footer*/
