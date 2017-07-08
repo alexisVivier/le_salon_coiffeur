@@ -336,7 +336,7 @@ a:hover, a:active {
 /*--------------------- PAGE CARTE -------------------*/
 
 
-#carte {
+.carte {
     height: 84.5vh;
     background-color: #231F20;
 }
@@ -364,7 +364,132 @@ a:hover, a:active {
     width: 50px;
 }
 
+article {
+    display: none;
+}
 
+#space_filter {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#filter {
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#filter a {
+    color: #231F20;
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    border: 2px solid #FFF3CE;
+    padding: 12px 70px;
+    border-radius: 15px;
+    background-color: #FFF3CE;
+    cursor: pointer;
+}
+
+#filter a:hover {
+    color: #FFF3CE;
+    border: 2px solid #FFF3CE;
+    background-color: #231F20;
+}
+#filter .active {
+    color: #FFF3CE;
+    border: 2px solid #FFF3CE;
+    background-color: #231F20;
+}
+
+.cat_title {
+    font-family: 'Raleway';
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #FFF3CE;
+    font-size: 18px;
+    margin: 0;
+    margin-bottom: 4vh;
+}
+
+.row_tarif {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 40vh;
+    margin-bottom: 2vh;
+}
+
+.name_tarif {
+    font-family: 'Raleway';
+    font-weight: 300;
+    letter-spacing: 2px;
+    color: #FFF3CE;
+    font-size: 16px;
+    margin: 0;
+}
+
+.price_tarif {
+    font-family: 'Raleway';
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #FFF3CE;
+    font-size: 16px;
+    margin: 0;
+}
+
+.homme_container {
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.enfant_container {
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.femme_container {
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.container_blocks {
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.femme_container .container_blocks {
+    width: 94%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.container_blocks_enfant {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.largeSpace {
+    height: 110.5vh;
+    background-color: #231F20;
+}
 
 
 

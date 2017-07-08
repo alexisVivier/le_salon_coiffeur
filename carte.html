@@ -19,44 +19,251 @@
             <nav id="block_nav_header"> <a href="contact.html">NOUS CONTACTER</a> <a href="carte.html">NOTRE CARTE</a> <a href="equipe.html">L'EQUIPE</a> <a href="partenaires.html">NOS PARTENAIRES</a> <a href="actualites.html">ACTUALITES</a> </nav>
         </div>
     </header>
-    <section id="carte">
+    <section class="carte">
         <div id="carte_title">
             <h1>NOTRE CARTE / NOS TARIFS</h1>
             <svg height="20px" version="1.1" viewBox="0 0 23 20" width="23px" xmlns="http://www.w3.org/2000/svg" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns" xmlns:xlink="http://www.w3.org/1999/xlink">
                 <title/><desc/><defs/><g fill="none" fill-rule="evenodd" id="Page-1" stroke="none" stroke-width="1"><g fill="#FFF3CE" id="Core" transform="translate(-127.000000, -128.000000)"><g id="content-cut" transform="translate(127.500000, 128.000000)"><path d="M8,4 C8,1.8 6.2,0 4,0 C1.8,0 0,1.8 0,4 C0,6.2 1.8,8 4,8 C4.6,8 5.1,7.9 5.6,7.6 L8,10 L5.6,12.4 C5.1,12.1 4.6,12 4,12 C1.8,12 0,13.8 0,16 C0,18.2 1.8,20 4,20 C6.2,20 8,18.2 8,16 C8,15.4 7.9,14.9 7.6,14.4 L10,12 L17,19 L21,19 L7.6,5.6 C7.9,5.1 8,4.6 8,4 L8,4 Z M4,6 C2.9,6 2,5.1 2,4 C2,2.9 2.9,2 4,2 C5.1,2 6,2.9 6,4 C6,5.1 5.1,6 4,6 L4,6 Z M4,18 C2.9,18 2,17.1 2,16 C2,14.9 2.9,14 4,14 C5.1,14 6,14.9 6,16 C6,17.1 5.1,18 4,18 L4,18 Z M10,9.5 C10.3,9.5 10.5,9.7 10.5,10 C10.5,10.3 10.3,10.5 10,10.5 C9.7,10.5 9.5,10.3 9.5,10 C9.5,9.7 9.7,9.5 10,9.5 L10,9.5 Z M21,1 L17,1 L11,7 L13,9 L21,1 L21,1 Z" id="Shape"/></g></g></g>
             </svg>
         </div>
-        <div id="filter">
-            <a class="cat" data-rel="femme">FEMME</a>
-            <a class="cat" data-rel="homme">HOMME</a>
-            <a class="cat" data-rel="enfant">ENFANT</a>
+        <div id="space_filter">
+            <div id="filter">
+                <a id="button_femme" class="cat" data-rel="femme">FEMME</a>
+                <a class="cat" data-rel="homme">HOMME</a>
+                <a class="cat" data-rel="enfant">ENFANT</a>
+            </div>
         </div>
-        <div id="gallery_images">
+        <div id="gallery_tarifs">
             <article class="femme animation">
-                <h1>COUPE FEMME</h1>
+                <div class="femme_container">
+                    <div class="container_blocks">
+                        <div class="block_tarifs">
+                            <p class="cat_title">Détails</p>
+                            <div class="row_tarif">
+                                <p class="name_tarif">Shampoing</p>
+                                <p class="price_tarif">5.45 €</p>
+                            </div>
+                            <div class="row_tarif">
+                                <p class="name_tarif">Coupe</p>
+                                <p class="price_tarif">13.95 €</p>
+                            </div>
+                            <div class="row_tarif">
+                                <p class="name_tarif">Coupe transformation</p>
+                                <p class="price_tarif">17.00 €</p>
+                            </div>
+                            <div class="row_tarif">
+                                <p class="name_tarif">Coiffage</p>
+                                <p class="price_tarif">9.10 €</p>
+                            </div>
+                            <div class="row_tarif">
+                                <p class="name_tarif">Coiffage lisseur</p>
+                                <p class="price_tarif">11.00 €</p>
+                            </div>
+                        </div>
+                        <div class="block_tarifs">
+                            <p class="cat_title">Couleurs</p>
+                            <div class="row_tarif">
+                                <p class="name_tarif">Ilumina color</p>
+                                <p class="price_tarif">30.00 €</p>   
+                            </div>
+                            <div class="row_tarif">
+                                <p class="name_tarif">Coloration créative</p>
+                                <p class="price_tarif">36.00 €</p>
+                            </div>
+                            <div class="row_tarif">
+                                <p class="name_tarif">Coloration eos aux plantes</p>
+                                <p class="price_tarif">29.50 €</p>
+                            </div>
+                            <div class="row_tarif">
+                                <p class="name_tarif">Coloration</p>
+                                <p class="price_tarif">27.50 €</p>
+                            </div>
+                            <div class="row_tarif">
+                                <p class="name_tarif">Coloration demi dose</p>
+                                <p class="price_tarif">13.50 €</p>
+                            </div>
+                            <div class="row_tarif">
+                                <p class="name_tarif">Reflets</p>
+                                <p class="price_tarif">26.00 €</p>
+                            </div>
+                            <div class="row_tarif">
+                                <p class="name_tarif">Gommage</p>
+                                <p class="price_tarif">20.00 €</p>
+                            </div>
+                            <div class="row_tarif">
+                                <p class="name_tarif">Décoloration</p>
+                                <p class="price_tarif">35.00 €</p>
+                            </div>
+                            <div class="row_tarif">
+                                <p class="name_tarif">Mèches cheveux courts</p>
+                                <p class="price_tarif">43.00 €</p>
+                            </div>
+                            <div class="row_tarif">
+                                <p class="name_tarif">Mèches cheveux mi-long</p>
+                                <p class="price_tarif">48.00 €</p>
+                            </div>
+                            <div class="row_tarif">
+                                <p class="name_tarif">Mèches cheveux longs</p>
+                                <p class="price_tarif">58.00 €</p>
+                            </div>
+                            <div class="row_tarif">
+                                <p class="name_tarif">Rattrapage</p>
+                                <p class="price_tarif">32.00 €</p>
+                            </div>
+                            <div class="row_tarif">
+                                <p class="name_tarif">Flash</p>
+                                <p class="price_tarif">19.00 €</p>
+                            </div>
+                        </div>
+                        <div class="block_tarifs">
+                            <p class="cat_title">Formes</p>
+                            <div class="row_tarif">
+                                <p class="name_tarif">Permanente Cheveux courts</p>
+                                <p class="price_tarif">28.00 €</p>
+                            </div>
+                            <div class="row_tarif">
+                                <p class="name_tarif">Permanente Cheveux mi-longs</p>
+                                <p class="price_tarif">35.00 €</p>
+                            </div>
+                            <div class="row_tarif">
+                                <p class="name_tarif">Permanente Cheveux longs</p>
+                                <p class="price_tarif">45.00 €</p>
+                            </div>
+                            <div class="row_tarif">
+                                <p class="name_tarif">Permanente Sans amoniaque</p>
+                                <p class="price_tarif">45.00 €</p>
+                            </div>
+                            <div class="row_tarif">
+                                <p class="name_tarif">Brushing Cheveux courts</p>
+                                <p class="price_tarif">11.50 €</p>
+                            </div>
+                            <div class="row_tarif">
+                                <p class="name_tarif">Brushing Cheveux mi-long</p>
+                                <p class="price_tarif">13.50 €</p>
+                            </div>
+                            <div class="row_tarif">
+                                <p class="name_tarif">Brushing Cheveux longs</p>
+                                <p class="price_tarif">16.50 €</p>
+                            </div>
+                            <div class="row_tarif">
+                                <p class="name_tarif">Défrisage</p>
+                                <p class="price_tarif">45.00 €</p>
+                            </div>
+                            <div class="row_tarif">
+                                <p class="name_tarif">Chignon</p>
+                                <p class="price_tarif">35.00 €</p>
+                            </div>
+                            <div class="row_tarif">
+                                <p class="name_tarif">Défrisage Japonais</p>
+                                <p class="price_tarif">69.00 €</p>
+                            </div>
+                            <div class="row_tarif">
+                                <p class="name_tarif">Défrisage Brésilien</p>
+                                <p class="price_tarif">59.00 €</p>
+                            </div>
+                        </div>
+                        <div class="block_tarifs">
+                            <p class="cat_title">Forfaits</p>
+                            <div class="row_tarif">
+                                <p class="name_tarif">Shampoing + coupe + coiffure</p>
+                                <p class="price_tarif">28.50 €</p>
+                            </div>
+                            <div class="row_tarif">
+                                <p class="name_tarif">Mariée</p>
+                                <p class="price_tarif">175.00 €</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </article>
             <article class="homme animation">
-                <h1>COUPE HOMME</h1>
+                <div class="homme_container">
+                    <div class="container_blocks">
+                        <div class="block_tarifs">
+                            <p class="cat_title">Détails</p>
+                            <div class="row_tarif">
+                                <p class="name_tarif">Shampoing</p>
+                                <p class="price_tarif">5.45 €</p>
+                            </div>
+                            <div class="row_tarif">
+                                <p class="name_tarif">Coupe</p>
+                                <p class="price_tarif">10.90 €</p>
+                            </div>
+                            <div class="row_tarif">
+                                <p class="name_tarif">Coiffage</p>
+                                <p class="price_tarif">3.15 €</p>
+                            </div>
+                        </div>
+                        <div class="block_tarifs">
+                            <p class="cat_title">Forfaits</p>
+                            <div class="row_tarif">
+                                <p class="name_tarif">Shampoing + coupe + coiffure</p>
+                                <p class="price_tarif">19.50 €</p>   
+                            </div>
+                            <div class="row_tarif">
+                                <p class="name_tarif">Brosse</p>
+                                <p class="price_tarif">20.00 €</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </article>
             <article class="enfant animation">
-                <h1>COUPE ENFANT</h1>
+                <div class="enfant_container">
+                    <div class="container_blocks_enfant">
+                        <div class="block_tarifs">
+                            <p class="cat_title">Forfaits</p>
+                            <div class="row_tarif">
+                                <p class="name_tarif">Garçons -15 ans</p>
+                                <p class="price_tarif">13.50 €</p>
+                            </div>
+                            <div class="row_tarif">
+                                <p class="name_tarif">Garçons -5 ans</p>
+                                <p class="price_tarif">9.00 €</p>
+                            </div>
+                            <div class="row_tarif">
+                                <p class="name_tarif">Fille -15 ans</p>
+                                <p class="price_tarif">21.00 €</p>
+                            </div>
+                            <div class="row_tarif">
+                                <p class="name_tarif">Fille -13 ans</p>
+                                <p class="price_tarif">14.00 €</p>
+                            </div>
+                            <div class="row_tarif">
+                                <p class="name_tarif">Fille -5 ans</p>
+                                <p class="price_tarif">11.50 €</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </article>
         </div>
         
         <script type="text/javascript">
     
-                  $(function() {
-                      var selectedClass = "";
-                      $(".cat").click(function(){
+            $(function() {
+                var selectedClass = "";
+                $(".cat").click(function(){
                           selectedClass = $(this).attr("data-rel");
-                    $("#gallery_images").fadeTo(100, 0.1);
-                          $("#gallery_images article").not("."+selectedClass).fadeOut().removeClass('animation');
-                          setTimeout(function() {
+                $("#gallery_tarifs").fadeTo(100, 0.1);
+                    $("#gallery_tarifs article").not("."+selectedClass).fadeOut().removeClass('animation');
+                    setTimeout(function() {
                               $("."+selectedClass).fadeIn().addClass('animation');
-                              $("#gallery_images").fadeTo(300, 2);
+                              $("#gallery_tarifs").fadeTo(300, 2);
                           }, 300);
                       });
                   });
+            $(function(){
+                $('#filter a').click(function(){
+                    $('#filter .active').removeClass('active'); // remove the class from the currently selected
+                    $(this).addClass('active'); // add the class to the newly clicked link
+                });
+            });
+            $(function() {                       //run when the DOM is ready
+              $("#button_femme").click(function() {  //use a class, since your ID gets mangled
+                $(".carte").addClass("largeSpace");      //add the class to the clicked element
+              });
+            });
         
         </script>
     </section>
