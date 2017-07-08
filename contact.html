@@ -19,7 +19,44 @@
         </div>
     </header>
     <section id="nous_contacter">
-        
+        <div id="ctc_block">
+            <div id="map"></div>
+            <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAwH8BsFfgAdtBpmKJmLJ9MsDmaHqKlcAA&callback=initMap">
+            </script>
+            <script src="js/gmaps.js"></script>
+            <div id="ctc_info">
+                <div id="contact_title">
+                    <h1>NOUS CONTACTER</h1>
+                    <p>Avec ou sans rendez-vous</p>
+                </div>
+                <div id="contact_calendar">
+                    <svg id="calendar_svg" height="6.82666in" style="shape-rendering:geometricPrecision;  text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd" viewBox="0 0 6.82666 6.82666" width="6.82666in" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <defs><style type="text/css">
+                    </style></defs><g id="Layer_x0020_1"><g id="_306569232"><path class="fil0" d="M1.82243 0.937913c0,-0.0220906 -0.0179094,-0.04 -0.04,-0.04 -0.0220906,0 -0.04,0.0179094 -0.04,0.04l0 0.816382c0,0.0220906 0.0179094,0.04 0.04,0.04 0.0220906,0 0.04,-0.0179094 0.04,-0.04l0 -0.816382z" id="_306569424"/><path class="fil0" d="M5.08424 0.937913c0,-0.0220906 -0.0179094,-0.04 -0.04,-0.04 -0.0220906,0 -0.04,0.0179094 -0.04,0.04l0 0.816382c0,0.0220906 0.0179094,0.04 0.04,0.04 0.0220906,0 0.04,-0.0179094 0.04,-0.04l0 -0.816382z" id="_306569688"/></g><path class="fil1" d="M6.03771 2.5518l-5.24876 0 0 3.22374c0,0.0997362 0.0407441,0.190354 0.106382,0.255988 0.0656339,0.0656378 0.156252,0.106382 0.255988,0.106382l4.52402 0c0.0997362,0 0.190354,-0.0407441 0.255988,-0.106382 0.0656378,-0.0656339 0.106382,-0.156252 0.106382,-0.255988l0 -3.22374zm-2.96137 0.414689l0.673992 0 0 0.457886 -0.673992 0 0 -0.457886zm1.61162 0l0.673988 0 0 0.457886 -0.673988 0 0 -0.457886zm-3.22323 1.08943l0.673988 0 0 0.457882 -0.673988 0 0 -0.457882zm1.61161 0l0.673992 0 0 0.457882 -0.673992 0 0 -0.457882zm1.61162 0l0.673988 0 0 0.457882 -0.673988 0 0 -0.457882zm-3.22323 1.08942l0.673988 0 0 0.457886 -0.673988 0 0 -0.457886zm1.61161 0l0.673992 0 0 0.457886 -0.673992 0 0 -0.457886zm1.61162 0l0.673988 0 0 0.457886 -0.673988 0 0 -0.457886z"/><path class="fil1" d="M0.788953 2.4718l5.24876 0 0 -0.843327c0,-0.0997362 -0.0407441,-0.190354 -0.106382,-0.255988 -0.0656339,-0.0656378 -0.156252,-0.106382 -0.255988,-0.106382l-0.511098 0 0 0.488193c0,0.0662441 -0.053752,0.119996 -0.119996,0.119996 -0.0662441,0 -0.119996,-0.053752 -0.119996,-0.119996l0 -0.488193 -3.02183 0 0 0.488193c0,0.0662441 -0.053752,0.119996 -0.119996,0.119996 -0.0662441,0 -0.119996,-0.053752 -0.119996,-0.119996l0 -0.488193 -0.511106 0c-0.0997362,0 -0.190354,0.0407441 -0.255988,0.106382 -0.0656378,0.0656339 -0.106382,0.156252 -0.106382,0.255988l0 0.843327z"/></g>
+                    </svg>
+                    <div class="column_day">
+                        <p class="day_calendar">Lundi</p>
+                        <p class="hr_calendar">14h00 - 19h00</p>
+                    </div>
+                    <div class="column_day">
+                        <p class="day_calendar">Mardi au Vendredi</p>
+                        <p class="hr_calendar">09h00- 19h00</p>
+                    </div>
+                    <div class="column_day">
+                        <p class="day_calendar">Samedi</p>
+                        <p class="hr_calendar">08h00 - 17h00</p>
+                    </div>
+                </div>
+                <div id="contact_phone">
+                    <svg id="phone_svg"height="18px" version="1.1" viewBox="0 0 18 18" width="18px" xmlns="http://www.w3.org/2000/svg" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns" xmlns:xlink="http://www.w3.org/1999/xlink"><title/><desc/><defs/><g fill="none" fill-rule="evenodd" id="Page-1" stroke="none" stroke-width="1"><g fill="#FFF3CE" id="Icons-Communication" transform="translate(-85.000000, -126.000000)"><g id="phone" transform="translate(85.000000, 126.000000)"><path d="M3.6,7.8 C5,10.6 7.4,12.9 10.2,14.4 L12.4,12.2 C12.7,11.9 13.1,11.8 13.4,12 C14.5,12.4 15.7,12.6 17,12.6 C17.6,12.6 18,13 18,13.6 L18,17 C18,17.6 17.6,18 17,18 C7.6,18 0,10.4 0,1 C0,0.4 0.4,0 1,0 L4.5,0 C5.1,0 5.5,0.4 5.5,1 C5.5,2.2 5.7,3.4 6.1,4.6 C6.2,4.9 6.1,5.3 5.9,5.6 L3.6,7.8 L3.6,7.8 Z" id="Shape"/></g></g></g></svg>
+                    <p>02 40 58 48 32</p>
+                </div>
+                <div id="contact_location">
+                    <svg id="location_svg" height="1792" viewBox="0 0 1792 1792" width="1792" xmlns="http://www.w3.org/2000/svg"><path d="M1152 640q0-106-75-181t-181-75-181 75-75 181 75 181 181 75 181-75 75-181zm256 0q0 109-33 179l-364 774q-16 33-47.5 52t-67.5 19-67.5-19-46.5-52l-365-774q-33-70-33-179 0-212 150-362t362-150 362 150 150 362z"/></svg>
+                    <p>18 Place de L'Hôtel de ville, 44260 Savenay</p>
+                </div>  
+            </div>
+        </div>
     </section>
     <footer>
         <div id="footer_container">

@@ -185,5 +185,120 @@ a:hover, a:active {
 
 #nous_contacter {
     height: 84.5vh;
-    
 }
+
+#ctc_block {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+}
+
+#map {
+    height: 100%;
+    width: 100vh;
+}
+
+#ctc_info {
+    height: 100%;
+    width: 100vh;
+    background-color: #231F20;
+    padding: 11vh;
+}
+
+#contact_title h1 {
+    font-family: 'Raleway';
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #FFF3CE;
+    font-size: 24px;
+}
+
+#contact_title p {
+    font-family: 'Raleway';
+    font-weight: 300;
+    letter-spacing: 2px;
+    color: #FFF3CE;
+    font-size: 15px;
+}
+
+#contact_calendar, #contact_phone, #contact_location {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 10vh;
+}
+
+#contact_phone {
+    padding-left: 5px;
+}
+
+.column_day {
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
+}
+
+.day_calendar {
+    font-family: 'Raleway';
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #FFF3CE;
+    font-size: 15px;
+    margin: 0;
+    margin-bottom: 10px;
+} 
+
+.hr_calendar {
+    font-family: 'Raleway';
+    font-weight: 300;
+    letter-spacing: 2px;
+    color: #FFF3CE;
+    font-size: 15px;
+    margin: 0;
+    margin-top: 10px;
+} 
+
+#calendar_svg {
+    fill: #FFF3CE;
+    height: 40px;
+    width: 40px;
+    padding: 0;
+}
+
+#phone_svg {
+    fill: #FFF3CE;
+    height: 30px;
+    width: 30px;
+    padding: 0;
+}
+
+#contact_phone p {
+    font-family: 'Raleway';
+    font-weight: 300;
+    letter-spacing: 2px;
+    color: #FFF3CE;
+    font-size: 15px;
+    margin: 0;
+    margin-left: 54px;
+} 
+
+#location_svg {
+    fill: #FFF3CE;
+    height: 40px;
+    width: 40px;
+    padding: 0;
+}
+
+#contact_location p {
+    font-family: 'Raleway';
+    font-weight: 300;
+    letter-spacing: 2px;
+    color: #FFF3CE;
+    font-size: 15px;
+    margin: 0;
+    margin-left: 50px;
+}
+
+
+
+
