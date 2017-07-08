@@ -24,6 +24,7 @@ a:hover, a:active {
 footer {
 	color: #FFF3CE;
 	background-color: #231F20;
+    height: 5.5vh;
 }
 
 /*Tous les p du footer*/
@@ -60,7 +61,7 @@ footer p {
 }
 
 #copyright_div, p {
-	padding: 2px 2px 2px 10px;
+	padding: 0 2px 0 10px;
 }
 
 /*Div qui contient le lien facebook et le SVG*/
