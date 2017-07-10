@@ -900,6 +900,56 @@ article {
         justify-content: center;
         align-items: center;
     }
+    
+    /*--------------------- PAGE PARTENAIRES - MOBILE -------------------*/
+    
+    
+    #partenaires #partenaires_container {
+        display: flex;
+        flex-direction: column !important;
+        justify-content: center;
+    }
+    #line_partenaires {
+        width: 20vh;
+        height: 1px;
+        background-color: #FFF3CE;
+    }
+    #svgGHD {
+        width: 30vh;
+        height: 22vh;
+        margin-right: 0;
+    }
+    #svgWella {
+        width: 24vh;
+        height: 28vh;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    
+     /*--------------------- PAGE ACTUALITES - MOBILE -------------------*/
+    
+    #actualites_container {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        margin: 4vh auto;
+        padding: 4%;
+        background-color: #FFF3CE;
+        color: #231F20;
+        text-align: left;
+    }
+    
+    #photo_Salon_Actu {
+        width: 90% !important;
+        margin: auto;
+    }
+    
+    #actualites_container p {
+        padding: 0 2%;
+        font-size: 16px;
+        letter-spacing: 2px;
+    }
+    
 }
 
 

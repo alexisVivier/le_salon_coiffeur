@@ -151,4 +151,13 @@ footer p {
 	margin: 2%;
 }
 
+#photo_Salon_Actu img {
+    max-width: 100%;
+    height: auto;
+}
+
+#photo_Salon_Actu {
+    width: 350%;
+}
+
 /*Fin page actualités*/
