@@ -7,16 +7,52 @@
     <meta name="viewport" content="initial-scale=1.0">
     <link rel="stylesheet" href="css/style_nathan.css" type="text/css">
     <link rel="stylesheet" href="css/style_alexis.css" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700,800" rel="stylesheet"> </head>
-
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700,800" rel="stylesheet"> 
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+</head>
+    
 <body>
-    <header>
+      <header>
         <div id="header_container">
             <div id="block_logo_header">
                 <a href="accueil.html"> <img src="img/le-salon-logo.png"> </a>
             </div>
-            <nav id="block_nav_header"> <a href="contact.html">NOUS CONTACTER</a> <a href="carte.html">NOTRE CARTE</a> <a href="equipe.html">L'EQUIPE</a> <a href="partenaires.html">NOS PARTENAIRES</a> <a href="actualites.html">ACTUALITES</a> </nav>
+            <nav id="block_nav_header"> 
+                <a href="contact.html">NOUS CONTACTER</a> 
+                <a href="carte.html">NOTRE CARTE</a> 
+                <a href="equipe.html">L'EQUIPE</a> 
+                <a href="partenaires.html">NOS PARTENAIRES</a> 
+                <a href="actualites.html">ACTUALITES</a> 
+            </nav>
         </div>
+        <div id="responsive-menu-container">
+            <div class="navbar-header">
+                <div class="toggle-button" id="hamberger_menu"> <span class="bar top"></span> <span class="bar middle"></span> <span class="bar bottom"></span> </div>
+                <a id="logo-responsive-menu" href="accueil.html">
+                    <img src="img/le-salon-logo.png">
+                </a>
+            </div>
+            <nav class="overlay" id="overlay_responsive_menu">
+                <div id="logo-Inresponsive-menu">
+                    <a href="accueil.html">
+                        <img src="img/le-salon-logo.png">
+                    </a>
+                </div>
+                <ul>
+                    <li><a href="contact.html">NOUS CONTACTER</a> </li>
+                    <li><a href="carte.html">NOTRE CARTE</a></li>
+                    <li><a href="equipe.html">L'EQUIPE</a></li>
+                    <li><a href="partenaires.html">NOS PARTENAIRES</a> </li>
+                    <li><a href="actualites.html">ACTUALITES</a> </li>
+                </ul>
+            </nav>
+        </div>
+        <script>
+            $('#hamberger_menu').click(function () {
+                $(this).toggleClass('toggle-active');
+                $('#overlay_responsive_menu').toggleClass('nav-active');
+            });
+        </script>
     </header>
     <section id="nous_contacter">
         <div id="ctc_block">
@@ -34,17 +70,19 @@
                         <defs><style type="text/css">
                     </style></defs><g id="Layer_x0020_1"><g id="_306569232"><path class="fil0" d="M1.82243 0.937913c0,-0.0220906 -0.0179094,-0.04 -0.04,-0.04 -0.0220906,0 -0.04,0.0179094 -0.04,0.04l0 0.816382c0,0.0220906 0.0179094,0.04 0.04,0.04 0.0220906,0 0.04,-0.0179094 0.04,-0.04l0 -0.816382z" id="_306569424"/><path class="fil0" d="M5.08424 0.937913c0,-0.0220906 -0.0179094,-0.04 -0.04,-0.04 -0.0220906,0 -0.04,0.0179094 -0.04,0.04l0 0.816382c0,0.0220906 0.0179094,0.04 0.04,0.04 0.0220906,0 0.04,-0.0179094 0.04,-0.04l0 -0.816382z" id="_306569688"/></g><path class="fil1" d="M6.03771 2.5518l-5.24876 0 0 3.22374c0,0.0997362 0.0407441,0.190354 0.106382,0.255988 0.0656339,0.0656378 0.156252,0.106382 0.255988,0.106382l4.52402 0c0.0997362,0 0.190354,-0.0407441 0.255988,-0.106382 0.0656378,-0.0656339 0.106382,-0.156252 0.106382,-0.255988l0 -3.22374zm-2.96137 0.414689l0.673992 0 0 0.457886 -0.673992 0 0 -0.457886zm1.61162 0l0.673988 0 0 0.457886 -0.673988 0 0 -0.457886zm-3.22323 1.08943l0.673988 0 0 0.457882 -0.673988 0 0 -0.457882zm1.61161 0l0.673992 0 0 0.457882 -0.673992 0 0 -0.457882zm1.61162 0l0.673988 0 0 0.457882 -0.673988 0 0 -0.457882zm-3.22323 1.08942l0.673988 0 0 0.457886 -0.673988 0 0 -0.457886zm1.61161 0l0.673992 0 0 0.457886 -0.673992 0 0 -0.457886zm1.61162 0l0.673988 0 0 0.457886 -0.673988 0 0 -0.457886z"/><path class="fil1" d="M0.788953 2.4718l5.24876 0 0 -0.843327c0,-0.0997362 -0.0407441,-0.190354 -0.106382,-0.255988 -0.0656339,-0.0656378 -0.156252,-0.106382 -0.255988,-0.106382l-0.511098 0 0 0.488193c0,0.0662441 -0.053752,0.119996 -0.119996,0.119996 -0.0662441,0 -0.119996,-0.053752 -0.119996,-0.119996l0 -0.488193 -3.02183 0 0 0.488193c0,0.0662441 -0.053752,0.119996 -0.119996,0.119996 -0.0662441,0 -0.119996,-0.053752 -0.119996,-0.119996l0 -0.488193 -0.511106 0c-0.0997362,0 -0.190354,0.0407441 -0.255988,0.106382 -0.0656378,0.0656339 -0.106382,0.156252 -0.106382,0.255988l0 0.843327z"/></g>
                     </svg>
-                    <div class="column_day">
-                        <p class="day_calendar">Lundi</p>
-                        <p class="hr_calendar">14h00 - 19h00</p>
-                    </div>
-                    <div class="column_day">
-                        <p class="day_calendar">Mardi au Vendredi</p>
-                        <p class="hr_calendar">09h00- 19h00</p>
-                    </div>
-                    <div class="column_day">
-                        <p class="day_calendar">Samedi</p>
-                        <p class="hr_calendar">08h00 - 17h00</p>
+                    <div id="responsiveColumnAdapt">
+                        <div class="column_day">
+                            <p class="day_calendar">Lundi</p>
+                            <p class="hr_calendar">14h00 - 19h00</p>
+                        </div>
+                        <div class="column_day">
+                            <p class="day_calendar">Mardi au Vendredi</p>
+                            <p class="hr_calendar">09h00- 19h00</p>
+                        </div>
+                        <div class="column_day">
+                            <p class="day_calendar">Samedi</p>
+                            <p class="hr_calendar">08h00 - 17h00</p>
+                        </div>
                     </div>
                 </div>
                 <div id="contact_phone">
@@ -58,7 +96,7 @@
             </div>
         </div>
     </section>
-    <footer>
+<footer>
         <div id="footer_container">
             <div id="copyright_div">
                 <!-- SVG COPYRIGHT -->
@@ -70,7 +108,7 @@
                 <p>Nathan HERVOUET</p>
                 <p>Alexis VIVIER</p>
             </div>
-            <p>lessalons.fr</p>
+            <p id="siteURL">lessalons.fr</p>
             <div id="facebook_div">
                 <p>Suivez nous sur Facebook</p>
                 <!--				SVG FACEBOOK-->

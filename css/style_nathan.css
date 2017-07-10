@@ -529,12 +529,376 @@ article {
     transform: scale(1.1);
 }
 
+/*--------------------- IMPORTANT ------------------------*/
+
+#responsive-menu-container {
+    display: none;
+}
 
 
 
 
+/*--------------------- RESPONSIVE FORMAT MOBILE -------------------*/
 
+@media all and (max-device-width: 480px)
+{  
+    /*--------------------- MENU RESPONSIVE MOBILE -------------------*/
+    
+    body {
+        display: block;
+    }
+    
+    #header_container {
+        display: none;
+    }
+    
+    #responsive-menu-container {
+        display: flex;
+        flex-direction: row;
+        background-color: #231F20;
+        height: 9vh;
+        width: 100%;
+        padding: 2vh 3vh 1.5vh 2vh;
+        top: 0;
+    }
+    
+    .navbar-header {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    #logo-responsive-menu img {
+        width: 185px;
+    }
+    
+    #logo-Inresponsive-menu {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 12vh;
+        width: 100%;
+    }
+    
+    #logo-Inresponsive-menu img {
+        width: 280px;
+    }
+    
+    .toggle-button {
+        padding: 9px 10px;
+        margin: 0 15px 8px 0;
+        height: 30px;
+        width: 45px;
+        cursor: pointer;
+        z-index: 999;
+        position: absolute;
+        left: 2vh;
+    }
 
+    .bar {
+        background-color: #FFF3CE;
+        display: block;
+        width: 100%;
+        height: 2px;
+        border: 0;
+        -webkit-transition: all .35s ease;
+        transition: all .35s ease;
+    }
+    .bar + .bar {
+        margin-top: 7px;
+    }
+    .middle {
+        top: 11px;
+    }
+    .bottom {
+        top: 22px;
+    }
+    .toggle-button:hover {
+        opacity: .7;
+    }
+    .toggle-active .bar {
+        background-color: #FFF3CE;
+    }
+    .toggle-active .top {
+        -webkit-transform: translateY(6px) translateX(0) rotate(45deg);
+    }
+    .toggle-active .middle {
+       opacity: 0;
+    }
+    .toggle-active .bottom {
+        -webkit-transform: translateY(-12px) translateX(0) rotate(-45deg);
+    }
 
+    .overlay {
+        position: fixed;
+        background-color: #231F20;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 0;
+        visibility: hidden;
+        opacity: 0;
+        -webkit-transition: opacity .35s, visibility .35s, height .35s;
+    }
+    .nav-active {
+        opacity: 1;
+        visibility: visible;
+        height: 100%;
+        z-index: 444;
+    }
+    .overlay ul {
+        display: block;
+        position: relative;
+        top: 6vh;
+        left: 0;
+        font-size: 18px;
+        font-weight: 300;
+        text-align: center;
+        list-style: none;
+        padding: 0;
+    }
+    .overlay ul li {
+        display: block;
+        padding-bottom: 5vh;       
+    }
+    .overlay ul li a {
+        text-decoration: none;
+        color: #FFF3CE;
+        font-family: 'Raleway', sans-serif;
+        font-size: 18px;
+        letter-spacing: 2px;
+    }
+    
+    /*--------------------- PAGE ACCUEIL - MOBILE -------------------*/
+    
+    #box_blur {
+        width: 95%;
+        height: 280px;
+    }
+    
+    #blur {
+        background: url(../img/le-salon-interieur.jpg) no-repeat center center fixed;
+        background-size: cover;
+        width: 110%;
+        height: 330px;
+        position: relative;
+        top: -15px;
+        left: -15px;
+        -webkit-filter: blur(8px);
+        -moz-filter: blur(8px);
+        filter: blur(8px);
+    }
+    
+    #color_white {
+        background: rgba(255, 255, 255, .60);
+        width: 100%;
+        height: 330px;
+    }
+    
+    #profile {
+        width: 100%;
+        height: 300px;
+        position: relative;
+        top: -330px;
+        border-radius: 8px;
+    }
+    #contenu_box_acc h1 {
+        font-size: 2.6vh;
+        text-align: center;
+    }
+    #contenu_box_acc p {
+        font-size: 1.85vh;
+        text-align: center;
+    }
+    #contenu_box_acc a {
+        color: #FFF3CE;
+        font-family: 'Raleway', sans-serif;
+        font-size: 13px;
+        font-weight: 500;
+        letter-spacing: 2px;
+        border: 2px solid #231F20;
+        padding: 12px 60px;
+        border-radius: 15px;
+        background-color: #231F20;
+        transition-duration: 0.7s;
+    }
+    #contenu_box_acc p {
+        margin-bottom: 5vh;
+    }
+    
+    /*--------------------- FOOTER - MOBILE -------------------*/
+    
+    footer {
+        height: 6.5vh !important;
+    }
+    #copyright_div, #siteURL {
+        display: none !important;
+    }
+    #footer_container {
+        width: 100% !important;
+        height: 100%;
+    }
+    footer p {
+        font-size: 14px;
+    }
+    
+    /*--------------------- PAGE NOUS CONTACTER - MOBILE -------------------*/
+    
+    #map {
+        display: none;
+    }
+    
+    #responsiveColumnAdapt {
+        display: flex;
+        flex-direction: column;
+    }
+    #ctc_info {
+        height: 100%;
+        width: 100%;
+        background-color: #231F20;
+        padding: 5vh 4vh 0 4vh;
+    }
+    
+    .day_calendar {
+        font-family: 'Raleway';
+        font-weight: 700;
+        letter-spacing: 2px;
+        color: #FFF3CE;
+        font-size: 16px;
+        margin: 0;
+        margin-bottom: 0;
+    }
+    .column_day {
+        display: flex;
+        flex-direction: column;
+        margin-left: 8vh;
+        margin-bottom: 4vh;
+    }
+    #contact_calendar {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-top: 8vh;
+    }
+    #contact_phone {
+        margin-top: 3vh;
+    }
+    #contact_location {
+        margin-top: 6vh;
+    }
+    #contact_phone p, #contact_location p {
+        margin-left: 8vh;
+    }
+    #location_svg {
+        width: 55px;
+    }
+    #contact_title {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #contact_title p {
+        margin: 0;
+    }
+    
+    /*--------------------- PAGE EQUIPE - MOBILE -------------------*/
+    
+    #ctc_block {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+    #eqp_info {
+        height: 100%;
+        width: 100%;
+        background-color: #231F20;
+        padding: 5vh 4vh 0 4vh;
+    }
+    #eqp_title p {
+        padding: 2vh;
+    }
+    #photo_equipe {
+        height: 100%;
+        width: 100%;
+    }
+    
+    /*--------------------- PAGE CARTE - MOBILE -------------------*/
+    
+    #carte_title h1 {
+        font-size: 20px;
+    }
+    #filter {
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        height: 25vh;
+    }
+    
+    .femme_container {
+        width: 100%;
+        height: 235vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .femme_container .container_blocks {
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .largeSpace {
+        height: 280vh !important;
+        background-color: #231F20;
+    }
+    .row_tarif {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        margin-bottom: 2vh;
+    }
+    .block_tarifs {
+        margin-bottom: 10vh;
+    }
+    .name_tarif {
+        width: 70%;
+    }
+    
+    .carte {
+        height: 124vh;
+        background-color: #231F20;
+    }
+    .homme_container {
+        width: 100%;
+        height: 75vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .container_blocks {
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .container_blocks_enfant {
+        display: flex;
+        width: 80%;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .enfant_container {
+        width: 100%;
+        height: 52vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
 
 

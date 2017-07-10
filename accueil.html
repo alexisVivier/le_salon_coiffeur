@@ -7,7 +7,9 @@
     <meta name="viewport" content="initial-scale=1.0">
     <link rel="stylesheet" href="css/style_nathan.css" type="text/css">
     <link rel="stylesheet" href="css/style_alexis.css" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700,800" rel="stylesheet"> </head>
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700,800" rel="stylesheet"> 
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+</head>
 
 <body id="body_accueil">
     <header>
@@ -15,8 +17,42 @@
             <div id="block_logo_header">
                 <a href="accueil.html"> <img src="img/le-salon-logo.png"> </a>
             </div>
-            <nav id="block_nav_header"> <a href="contact.html">NOUS CONTACTER</a> <a href="carte.html">NOTRE CARTE</a> <a href="equipe.html">L'EQUIPE</a> <a href="partenaires.html">NOS PARTENAIRES</a> <a href="actualites.html">ACTUALITES</a> </nav>
+            <nav id="block_nav_header"> 
+                <a href="contact.html">NOUS CONTACTER</a> 
+                <a href="carte.html">NOTRE CARTE</a> 
+                <a href="equipe.html">L'EQUIPE</a> 
+                <a href="partenaires.html">NOS PARTENAIRES</a> 
+                <a href="actualites.html">ACTUALITES</a> 
+            </nav>
         </div>
+        <div id="responsive-menu-container">
+            <div class="navbar-header">
+                <div class="toggle-button" id="hamberger_menu"> <span class="bar top"></span> <span class="bar middle"></span> <span class="bar bottom"></span> </div>
+                <a id="logo-responsive-menu" href="accueil.html">
+                    <img src="img/le-salon-logo.png">
+                </a>
+            </div>
+            <nav class="overlay" id="overlay_responsive_menu">
+                <div id="logo-Inresponsive-menu">
+                    <a href="accueil.html">
+                        <img src="img/le-salon-logo.png">
+                    </a>
+                </div>
+                <ul>
+                    <li><a href="contact.html">NOUS CONTACTER</a> </li>
+                    <li><a href="carte.html">NOTRE CARTE</a></li>
+                    <li><a href="equipe.html">L'EQUIPE</a></li>
+                    <li><a href="partenaires.html">NOS PARTENAIRES</a> </li>
+                    <li><a href="actualites.html">ACTUALITES</a> </li>
+                </ul>
+            </nav>
+        </div>
+        <script>
+            $('#hamberger_menu').click(function () {
+                $(this).toggleClass('toggle-active');
+                $('#overlay_responsive_menu').toggleClass('nav-active');
+            });
+        </script>
     </header>
     <section id="accueil">
         <div id="box_blur">
@@ -44,7 +80,7 @@
                 <p>Nathan HERVOUET</p>
                 <p>Alexis VIVIER</p>
             </div>
-            <p>lessalons.fr</p>
+            <p id="siteURL">lessalons.fr</p>
             <div id="facebook_div">
                 <p>Suivez nous sur Facebook</p>
                 <!--				SVG FACEBOOK-->
