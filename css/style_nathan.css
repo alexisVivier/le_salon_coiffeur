@@ -27,6 +27,7 @@ a:hover, a:active {
     justify-content: center;
     align-items: flex-end;
     background-color: #231F20;
+	border-bottom: solid 0.25px #FFF3CE;
 }
 
 #block_nav_header{
