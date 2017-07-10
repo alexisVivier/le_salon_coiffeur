@@ -25,6 +25,7 @@ footer {
 	color: #FFF3CE;
 	background-color: #231F20;
     height: 5.5vh;
+	border-top: solid 0.5px #FFF3CE;
 }
 
 /*Tous les p du footer*/
@@ -100,3 +101,54 @@ footer p {
 }
 
 /*Fin page partenaire*/
+
+/*Début page actualités*/
+
+#actualites {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	text-align: center;
+	background-color: #231f20;
+	font-family: 'Raleway';
+	letter-spacing: 2px;
+	color: #fff3ce;
+	min-height: 84.5vh;
+}
+
+#actualites_title {
+    width: 100%;
+    height: 14vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#actualites_container {
+	display: flex;
+	width: 80%;
+	margin: 4% auto;
+	padding: 2%;
+	background-color: #FFF3CE;
+	color: #231F20;
+	text-align: left;
+}
+
+#actualites_container p {
+	padding: 0 2%;
+	font-size: 18px;
+	letter-spacing: 2px;
+}
+
+#actualites_container img {
+	box-shadow: 8px 8px 6px #544141;
+}
+
+#actualites_message {
+	display: flex;
+	flex-direction: column;
+	margin: 2%;
+}
+
+/*Fin page actualités*/
