@@ -491,6 +491,48 @@ article {
     background-color: #231F20;
 }
 
+/*--------------------- PAGE PARTENAIRES -------------------*/
+
+#partenaires {
+    height: 84.5vh;
+}
+
+#line_partenaires {
+    width: 1px;
+    height: 25vh;
+    background-color: #FFF3CE;
+}
+
+#partenaires_container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#svgGHD {
+    width: 35vh;
+    height: 35vh;
+    margin-right: 10vh;
+    transition-duration: 0.7s;
+}
+
+#svgWella {
+    width: 25vh;
+    height: 32vh;
+    margin-left: 10vh;
+    margin-right: 8.8vh;
+    transition-duration: 0.7s;
+}
+
+#svgGHD:hover, #svgWella:hover {
+    transform: scale(1.1);
+}
+
+
+
+
+
 
 
 
