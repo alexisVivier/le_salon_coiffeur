@@ -155,7 +155,10 @@ a:hover, a:active {
 
 /*--------------------- PAGE NOUS CONTACTER -------------------*/
 
-
+#responsiveColumnAdapt {
+    display: flex;
+    flex-direction: row;
+}
 
 #nous_contacter {
     height: 84.5vh;
@@ -952,4 +955,2245 @@ article {
     
 }
 
+/*--------------------- RESPONSIVE TABLETTE - PORTRAIT -------------------*/
+
+
+@media all and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+    
+    
+    
+    /*--------------------- MENU RESPONSIVE MOBILE -------------------*/
+    
+    body {
+        display: block;
+    }
+    
+    #header_container {
+        display: none;
+    }
+    
+    #responsive-menu-container {
+        display: flex;
+        flex-direction: row;
+        background-color: #231F20;
+        height: 8vh;
+        width: 100%;
+        padding: 2vh 3vh 1.5vh 2vh;
+        top: 0;
+    }
+    
+    .navbar-header {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    #logo-responsive-menu img {
+        width: 240px;
+    }
+    
+    #logo-Inresponsive-menu {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 12vh;
+        width: 100%;
+    }
+    
+    #logo-Inresponsive-menu img {
+        width: 400px;
+    }
+    
+    .toggle-button {
+        padding: 9px 10px;
+        margin: 0 15px 8px 0;
+        height: 30px;
+        width: 45px;
+        cursor: pointer;
+        z-index: 999;
+        position: absolute;
+        left: 2vh;
+    }
+
+    .bar {
+        background-color: #FFF3CE;
+        display: block;
+        width: 100%;
+        height: 2px;
+        border: 0;
+        -webkit-transition: all .35s ease;
+        transition: all .35s ease;
+    }
+    .bar + .bar {
+        margin-top: 7px;
+    }
+    .middle {
+        top: 11px;
+    }
+    .bottom {
+        top: 22px;
+    }
+    .toggle-button:hover {
+        opacity: .7;
+    }
+    .toggle-active .bar {
+        background-color: #FFF3CE;
+    }
+    .toggle-active .top {
+        -webkit-transform: translateY(6px) translateX(0) rotate(45deg);
+    }
+    .toggle-active .middle {
+       opacity: 0;
+    }
+    .toggle-active .bottom {
+        -webkit-transform: translateY(-12px) translateX(0) rotate(-45deg);
+    }
+
+    .overlay {
+        position: fixed;
+        background-color: #231F20;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 0;
+        visibility: hidden;
+        opacity: 0;
+        -webkit-transition: opacity .35s, visibility .35s, height .35s;
+    }
+    .nav-active {
+        opacity: 1;
+        visibility: visible;
+        height: 100%;
+        z-index: 444;
+    }
+    .overlay ul {
+        display: block;
+        position: relative;
+        top: 8vh;
+        left: 0;
+        font-size: 18px;
+        font-weight: 300;
+        text-align: center;
+        list-style: none;
+        padding: 0;
+    }
+    .overlay ul li {
+        display: block;
+        padding-bottom: 5vh;       
+    }
+    .overlay ul li a {
+        text-decoration: none;
+        color: #FFF3CE;
+        font-family: 'Raleway', sans-serif;
+        font-size: 18px;
+        letter-spacing: 2px;
+    }
+    
+    
+    /*--------------------- PAGE D'ACCUEIL - TABLETTE -------------------*/
+    
+    footer {
+        height: 7.5vh !important;
+    }
+    
+    #siteURL {
+        display: none;
+    }
+    #footer_container {
+        width: 100% !important;
+        height: 100%;
+    }
+    
+    /*--------------------- PAGE CONTACT - TABLETTE -------------------*/
+    
+    
+    #ctc_block {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+    #map {
+        height: 30%;
+        width: 100%;
+    }
+    #ctc_info {
+        height: 70%;
+        width: 100%;
+        background-color: #231F20;
+        padding: 4vh 8vh 0 8vh;
+    }
+    #responsiveColumnAdapt {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+    }
+    #contact_calendar, #contact_phone, #contact_location {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-top: 8.5vh;
+    }
+    
+    /*--------------------- PAGE CARTE - TABLETTE -------------------*/
+    
+    #filter {
+        width: 92%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .femme_container .container_blocks {
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .femme_container {
+        width: 100%;
+        height: 180vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .row_tarif {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        margin-bottom: 2vh;
+    }
+    .largeSpace {
+        height: 202vh;
+        background-color: #231F20;
+    }
+    .block_tarifs {
+        margin-bottom: 5vh;
+    }
+    .container_blocks {
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .homme_container {
+        width: 100%;
+        height: 60vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .container_blocks_enfant {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 60%;
+    }
+    .enfant_container {
+        width: 100%;
+        height: 50vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    /*--------------------- PAGE EQUIPE - TABLETTE -------------------*/
+    
+    #photo_equipe {
+        height: 55%;
+        width: 100%;
+    }
+    #eqp_info {
+        height: 45%;
+        width: 100%;
+        background-color: #231F20;
+        padding: 4vh 8vh 0 8vh;
+    }
+    #eqp_title p {
+        font-family: 'Raleway';
+        font-weight: 300;
+        letter-spacing: 2px;
+        color: #FFF3CE;
+        font-size: 15px;
+        padding: 5vh;
+    }
+    
+    /*--------------------- PAGE PARTENAIRE - TABLETTE -------------------*/
+    
+    #svgWella {
+        width: 18vh;
+        height: 35vh;
+        margin-left: 3vh;
+        margin-right: 8vh;
+        transition-duration: 0.7s;
+    }
+    #svgGHD {
+        width: 28vh;
+        height: 35vh;
+        margin-right: 3vh;
+        transition-duration: 0.7s;
+    }
+    
+    /*--------------------- PAGE ACTUALITE - TABLETTE -------------------*/
+    
+    #actualites_container p {
+        padding: 0 2%;
+        font-size: 18px;
+        letter-spacing: 2px;
+        margin-bottom: 0;
+    }
+    #photo_Salon_Actu {
+        width: 52% !important;
+        margin: 0 auto;
+    }
+    #actualites_container {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+/*--------------------- RESPONSIVE FORMAT MOBILE PAYSAGE -------------------*/
+
+@media all and (max-device-width: 480px) and (orientation : landscape) {
+    
+    
+    /*--------------------- MENU RESPONSIVE MOBILE -------------------*/
+    
+    body {
+        display: block;
+    }
+    
+    #header_container {
+        display: none;
+    }
+    
+    #responsive-menu-container {
+        display: flex;
+        flex-direction: row;
+        background-color: #231F20;
+        height: 14vh;
+        width: 100%;
+        padding: 2vh 3vh 1.5vh 2vh;
+        top: 0;
+    }
+    
+    .navbar-header {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    #logo-responsive-menu img {
+        width: 200px;
+    }
+    
+    #logo-Inresponsive-menu {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 12vh;
+        width: 100%;
+    }
+    
+    #logo-Inresponsive-menu img {
+        width: 250px;
+    }
+    
+    .toggle-button {
+        padding: 9px 10px;
+        margin: 0 15px 8px 0;
+        height: 30px;
+        width: 45px;
+        cursor: pointer;
+        z-index: 999;
+        position: absolute;
+        left: 2vh;
+    }
+
+    .bar {
+        background-color: #FFF3CE;
+        display: block;
+        width: 100%;
+        height: 2px;
+        border: 0;
+        -webkit-transition: all .35s ease;
+        transition: all .35s ease;
+    }
+    .bar + .bar {
+        margin-top: 7px;
+    }
+    .middle {
+        top: 11px;
+    }
+    .bottom {
+        top: 22px;
+    }
+    .toggle-button:hover {
+        opacity: .7;
+    }
+    .toggle-active .bar {
+        background-color: #FFF3CE;
+    }
+    .toggle-active .top {
+        -webkit-transform: translateY(6px) translateX(0) rotate(45deg);
+    }
+    .toggle-active .middle {
+       opacity: 0;
+    }
+    .toggle-active .bottom {
+        -webkit-transform: translateY(-12px) translateX(0) rotate(-45deg);
+    }
+
+    .overlay {
+        position: fixed;
+        background-color: #231F20;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 0;
+        visibility: hidden;
+        opacity: 0;
+        -webkit-transition: opacity .35s, visibility .35s, height .35s;
+    }
+    .nav-active {
+        opacity: 1;
+        visibility: visible;
+        height: 100%;
+        z-index: 444;
+    }
+    .overlay ul {
+        display: block;
+        position: relative;
+        top: 8vh;
+        left: 0;
+        font-size: 18px;
+        font-weight: 300;
+        text-align: center;
+        list-style: none;
+        padding: 0;
+    }
+    .overlay ul li {
+        display: block;
+        padding-bottom: 5vh;       
+    }
+    .overlay ul li a {
+        text-decoration: none;
+        color: #FFF3CE;
+        font-family: 'Raleway', sans-serif;
+        font-size: 15px;
+        letter-spacing: 2px;
+    }
+    
+    /*--------------------- PAGE D'ACCUEIL - MOBILE PAYSAGE -------------------*/
+    
+    #profile {
+        width: 100%;
+        height: 200px;
+        position: relative;
+        top: -330px;
+        border-radius: 8px;
+    }
+    #box_blur {
+        width: 75%;
+        height: 200px;
+    }
+    #contenu_box_acc h1 {
+        font-size: 4.6vh;
+        text-align: center;
+    }
+    #contenu_box_acc p {
+        font-size: 3.25vh;
+        text-align: center;
+    }
+    #contenu_box_acc a {
+        color: #FFF3CE;
+        font-family: 'Raleway', sans-serif;
+        font-size: 11px;
+        font-weight: 500;
+        letter-spacing: 2px;
+        border: 2px solid #231F20;
+        padding: 10px 50px;
+        border-radius: 15px;
+        background-color: #231F20;
+        transition-duration: 0.7s;
+    }
+    #contenu_box_acc p {
+        margin-bottom: 7vh;
+    }
+    footer p {
+        font-size: 12px;
+    }
+    #accueil {
+        height: 78vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    footer {
+        height: 8vh !important;
+    }
+    #facebook_div svg {
+        height: 18px;
+    }
+    /*--------------------- PAGE CONTACT - MOBILE PAYSAGE -------------------*/
+    
+    #responsiveColumnAdapt {
+        display: flex;
+        flex-direction: row;
+    }
+    #contact_title h1 {
+        font-size: 18px;
+        margin-bottom: 0;
+    }
+    #contact_title p, #contact_phone p, #contact_location p {
+        font-size: 12px;
+    }
+    .day_calendar {
+        font-size: 14px;
+    }
+    .hr_calendar {
+        font-size: 12px;
+    }
+    #calendar_svg {
+        fill: #FFF3CE;
+        height: 40px;
+        width: 30px;
+        padding: 0;
+    }
+    #contact_phone {
+        padding-left: 0;
+    }
+    #phone_svg {
+        fill: #FFF3CE;
+        height: 20px;
+        width: 30px;
+        padding: 0;
+    }
+    #location_svg {
+        height: 30px;
+        width: 30px;
+    }
+    #ctc_info {
+        height: 100%;
+        width: 100%;
+        background-color: #231F20;
+        padding: 5vh 22vh 0 22vh;
+    }
+    #nous_contacter {
+        height: 78vh;
+    }
+    #contact_calendar {
+        margin-top: 12vh;
+    }
+    
+    /*--------------------- PAGE CARTE - MOBILE PAYSAGE -------------------*/
+    
+    #filter {
+        height: 35vh;
+    }
+    #filter a {
+        color: #231F20;
+        font-family: 'Raleway', sans-serif;
+        font-size: 13px;
+        font-weight: 500;
+        letter-spacing: 2px;
+        border: 2px solid #FFF3CE;
+        padding: 10px 55px;
+        border-radius: 15px;
+        background-color: #FFF3CE;
+        cursor: pointer;
+    }
+    #carte_title h1 {
+        font-size: 18px;
+    }
+    #carte_title svg {
+        fill: #FFF3CE;
+        width: 30px;
+    }
+    .femme_container {
+        width: 100%;
+        height: 310vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .largeSpace {
+        height: 370vh !important;
+        background-color: #231F20;
+    }
+    
+    /*--------------------- PAGE EQUIPE - MOBILE PAYSAGE -------------------*/
+    
+    #eqp_title h1 {
+        font-size: 18px;
+    }
+    #eqp_title p {
+        padding: 8vh;
+    }
+    #eqp_title p {
+        font-size: 14px;
+    } 
+    #ctc_block {
+        display: flex;
+        flex-direction: row;
+        height: 100%;
+    }
+    
+     /*--------------------- PAGE ACTU - MOBILE PAYSAGE -------------------*/
+    
+    #actualites_container p {
+        padding: 0 2%;
+        font-size: 16px !important;
+        letter-spacing: 2px;
+    }
+    
+}
+
+/*--------------------- RESPONSIVE TABLETTE - PORTRAIT -------------------*/
+
+
+@media all and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+
+    /*--------------------- MENU RESPONSIVE MOBILE -------------------*/
+    
+    body {
+        display: block;
+    }
+    
+    #header_container {
+        display: none;
+    }
+    
+    #responsive-menu-container {
+        display: flex;
+        flex-direction: row;
+        background-color: #231F20;
+        height: 9vh;
+        width: 100%;
+        padding: 2vh 3vh 1.5vh 2vh;
+        top: 0;
+    }
+    
+    .navbar-header {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    #logo-responsive-menu img {
+        width: 220px;
+    }
+    
+    #logo-Inresponsive-menu {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 12vh;
+        width: 100%;
+    }
+    
+    #logo-Inresponsive-menu img {
+        width: 350px;
+    }
+    
+    .toggle-button {
+        padding: 9px 10px;
+        margin: 0 15px 8px 0;
+        height: 30px;
+        width: 45px;
+        cursor: pointer;
+        z-index: 999;
+        position: absolute;
+        left: 2vh;
+    }
+
+    .bar {
+        background-color: #FFF3CE;
+        display: block;
+        width: 100%;
+        height: 2px;
+        border: 0;
+        -webkit-transition: all .35s ease;
+        transition: all .35s ease;
+    }
+    .bar + .bar {
+        margin-top: 7px;
+    }
+    .middle {
+        top: 11px;
+    }
+    .bottom {
+        top: 22px;
+    }
+    .toggle-button:hover {
+        opacity: .7;
+    }
+    .toggle-active .bar {
+        background-color: #FFF3CE;
+    }
+    .toggle-active .top {
+        -webkit-transform: translateY(6px) translateX(0) rotate(45deg);
+    }
+    .toggle-active .middle {
+       opacity: 0;
+    }
+    .toggle-active .bottom {
+        -webkit-transform: translateY(-12px) translateX(0) rotate(-45deg);
+    }
+
+    .overlay {
+        position: fixed;
+        background-color: #231F20;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 0;
+        visibility: hidden;
+        opacity: 0;
+        -webkit-transition: opacity .35s, visibility .35s, height .35s;
+    }
+    .nav-active {
+        opacity: 1;
+        visibility: visible;
+        height: 100%;
+        z-index: 444;
+    }
+    .overlay ul {
+        display: block;
+        position: relative;
+        top: 8vh;
+        left: 0;
+        font-size: 16px;
+        font-weight: 300;
+        text-align: center;
+        list-style: none;
+        padding: 0;
+    }
+    .overlay ul li {
+        display: block;
+        padding-bottom: 5vh;       
+    }
+    .overlay ul li a {
+        text-decoration: none;
+        color: #FFF3CE;
+        font-family: 'Raleway', sans-serif;
+        font-size: 15px;
+        letter-spacing: 2px;
+    }
+    
+    /*--------------------- PAGE D'ACCUEIL - MOBILE PAYSAGE -------------------*/
+    
+    #profile {
+        width: 100%;
+        height: 200px;
+        position: relative;
+        top: -330px;
+        border-radius: 8px;
+    }
+    #box_blur {
+        width: 55%;
+        height: 200px;
+    }
+    #contenu_box_acc h1 {
+        font-size: 2.6vh;
+        text-align: center;
+    }
+    #contenu_box_acc p {
+        font-size: 1.85vh;
+        text-align: center;
+    }
+    #contenu_box_acc a {
+        color: #FFF3CE;
+        font-family: 'Raleway', sans-serif;
+        font-size: 11px;
+        font-weight: 500;
+        letter-spacing: 2px;
+        border: 2px solid #231F20;
+        padding: 10px 50px;
+        border-radius: 15px;
+        background-color: #231F20;
+        transition-duration: 0.7s;
+    }
+    #contenu_box_acc p {
+        margin-bottom: 4vh;
+    }
+    footer p {
+        font-size: 12px;
+    }
+    #accueil {
+        height: 84vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    footer {
+        height: 7vh !important;
+    }
+    #facebook_div svg {
+        height: 18px;
+    }
+    /*--------------------- PAGE CONTACT - MOBILE PAYSAGE -------------------*/
+    
+    #responsiveColumnAdapt {
+        display: flex;
+        flex-direction: row;
+    }
+    #contact_title h1 {
+        font-size: 18px;
+        margin-bottom: 0;
+    }
+    #contact_title p, #contact_phone p, #contact_location p {
+        font-size: 12px;
+    }
+    .day_calendar {
+        font-size: 14px;
+    }
+    .hr_calendar {
+        font-size: 12px;
+    }
+    #calendar_svg {
+        fill: #FFF3CE;
+        height: 40px;
+        width: 30px;
+        padding: 0;
+    }
+    #contact_phone {
+        padding-left: 0;
+    }
+    #phone_svg {
+        fill: #FFF3CE;
+        height: 20px;
+        width: 30px;
+        padding: 0;
+    }
+    #location_svg {
+        height: 30px;
+        width: 30px;
+    }
+    #ctc_info {
+        height: 100%;
+        width: 100%;
+        background-color: #231F20;
+        padding: 5vh 22vh 0 22vh;
+    }
+    #nous_contacter {
+        height: 84vh;
+    }
+    #contact_calendar {
+        margin-top: 12vh;
+    }
+    #footer_container {
+        width: 80% !important;
+        margin: auto;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row;
+        height: 100%;
+        align-items: center;
+    }
+    #map {
+        height: 100%;
+        width: 30%;
+    }
+    #ctc_info {
+        height: 100%;
+        width: 70%;
+        background-color: #231F20;
+        padding: 10vh 0 0 8vh;
+    }
+    /*--------------------- PAGE CARTE - MOBILE PAYSAGE -------------------*/
+    
+    #filter {
+        height: 6vh;
+    }
+    #filter a {
+        color: #231F20;
+        font-family: 'Raleway', sans-serif;
+        font-size: 13px;
+        font-weight: 500;
+        letter-spacing: 2px;
+        border: 2px solid #FFF3CE;
+        padding: 10px 55px;
+        border-radius: 15px;
+        background-color: #FFF3CE;
+        cursor: pointer;
+    }
+    #carte_title h1 {
+        font-size: 18px;
+    }
+    #carte_title svg {
+        fill: #FFF3CE;
+        width: 30px;
+    }
+    .femme_container {
+        width: 100%;
+        height: 175vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .largeSpace {
+        height: 200vh !important;
+        background-color: #231F20;
+    }
+    .femme_container .container_blocks {
+        width: 80%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .block_tarifs {
+        margin-bottom: 8vh;
+    }
+    .container_blocks {
+        width: 80%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .homme_container {
+        height: 50vh;
+    }
+    .enfant_container {
+        height: 50vh;
+    }
+    /*--------------------- PAGE EQUIPE - MOBILE PAYSAGE -------------------*/
+    
+    #eqp_title h1 {
+        font-size: 18px;
+    }
+    #eqp_title p {
+        padding: 8vh 2vh 2vh;
+    }
+    #eqp_title p {
+        font-size: 14px;
+    } 
+    #ctc_block {
+        display: flex;
+        flex-direction: row;
+        height: 100%;
+    }
+    
+     /*--------------------- PAGE ACTU - MOBILE PAYSAGE -------------------*/
+    
+    #actualites_container p {
+        padding: 0 2%;
+        font-size: 16px !important;
+        letter-spacing: 2px;
+    }
+    #photo_Salon_Actu {
+        width: 520% !important;
+    }
+}
+
+/* ============================ RESPONSIVE PC 13.3" - CHROME ================================*/
+
+
+@media only screen and (min-width : 1224px) and (max-width : 1690px){
+    
+    
+    /*--------------------- HEADER -------------------*/
+    
+    #block_logo_header img {
+        height: 45px;
+        margin-right: 45px;
+        margin-bottom: 10px;
+    }
+    
+    #block_nav_header a {
+        color: #FFF3CE;
+        font-family: 'Raleway', sans-serif;
+        font-size: 13px;
+        letter-spacing: 2px;
+        margin: 0 0 0 45px;
+        transition-duration: 0.7s;
+    }
+    
+    /*--------------------- PAGE D'ACCUEIL -------------------*/
+    
+    #contenu_box_acc h1 {
+        color: #231F20;
+        font-family: 'Raleway', sans-serif;
+        font-size: 20px;
+        font-weight: 800;
+        letter-spacing: 2px;
+        margin: 0;
+    }
+    #contenu_box_acc p {
+        color: #231F20;
+        font-family: 'Raleway', sans-serif;
+        font-size: 14.5px;
+        font-weight: 400;
+        letter-spacing: 2px;
+        padding: 0;
+        margin-top: 2vh;
+        margin-bottom: 4vh;
+    }
+    #contenu_box_acc a {
+        color: #FFF3CE;
+        font-family: 'Raleway', sans-serif;
+        font-size: 13px;
+        font-weight: 500;
+        letter-spacing: 2px;
+        border: 2px solid #231F20;
+        padding: 10px 55px;
+        border-radius: 15px;
+        background-color: #231F20;
+        transition-duration: 0.7s;
+    }
+    #box_blur {
+        width: 550px;
+        height: 230px;
+        position: relative;
+        overflow: hidden;
+    }
+    #profile {
+        width: 550px;
+        height: 230px;
+        position: relative;
+        top: -330px;
+        border-radius: 8px;
+    }
+    #facebook_div svg {
+        height: 20px;
+        fill: #FFF3CE;
+        padding-left: 10px;
+        align-self: center;
+    }
+    footer p {
+        font-family: 'Raleway';
+        letter-spacing: 2px;
+        font-size: 13px;
+    }
+    
+    /*--------------------- CONTACT -------------------*/
+    
+    
+    #map {
+        height: 100%;
+        width: 50%;
+    }
+    
+    #ctc_info {
+        height: 100%;
+        width: 50%;
+        background-color: #231F20;
+        padding: 8vh 0 0 6vh;
+    }
+    #responsiveColumnAdapt {
+        display: flex;
+        flex-direction: row;
+    }
+    #contact_title p, .hr_calendar, #contact_phone p, #contact_location p {
+        font-size: 13px;
+    }
+    #contact_title h1 {
+        font-size: 20px;
+    }
+    #calendar_svg {
+        fill: #FFF3CE;
+        height: 30px;
+        width: 30px;
+        padding: 0;
+    }
+    #phone_svg {
+        fill: #FFF3CE;
+        height: 22px;
+        width: 22px;
+        padding: 0;
+    }
+    #location_svg {
+        fill: #FFF3CE;
+        height: 30px;
+        width: 30px;
+        padding: 0;
+    }
+    .column_day {
+        display: flex;
+        flex-direction: column;
+        margin-left: 44px;
+    }
+    
+    /*--------------------- CONTACT -------------------*/
+    
+    
+    #carte_title svg {
+        fill: #FFF3CE;
+        width: 35px;
+    }
+
+    #carte_title h1 {
+        font-family: 'Raleway';
+        font-weight: 700;
+        letter-spacing: 2px;
+        color: #FFF3CE;
+        font-size: 20px;
+        margin-bottom: 4vh;
+    }
+    #filter a {
+        color: #231F20;
+        font-family: 'Raleway', sans-serif;
+        font-size: 13px;
+        font-weight: 500;
+        letter-spacing: 2px;
+        border: 2px solid #FFF3CE;
+        padding: 10px 55px;
+        border-radius: 15px;
+        background-color: #FFF3CE;
+        cursor: pointer;
+    }
+    .cat_title {
+        font-size: 14px;
+    }
+    .name_tarif {
+        font-family: 'Raleway';
+        font-weight: 300;
+        letter-spacing: 2px;
+        color: #FFF3CE;
+        font-size: 13px;
+        margin: 0;
+    }
+    .price_tarif {
+        font-family: 'Raleway';
+        font-weight: 700;
+        letter-spacing: 2px;
+        color: #FFF3CE;
+        font-size: 13px;
+        margin: 0;
+    }
+    .femme_container .container_blocks {
+        width: 94%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .block_tarifs {
+        margin-bottom: 6vh;
+    }
+    .femme_container {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .largeSpace {
+        height: 125vh !important;
+        background-color: #231F20;
+    }
+    .enfant_container {
+        width: 100%;
+        height: 50vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    /*--------------------- EQUIPE -------------------*/
+    
+    #eqp_title h1 {
+        font-family: 'Raleway';
+        font-weight: 700;
+        letter-spacing: 2px;
+        color: #FFF3CE;
+        font-size: 20px;
+    }
+    #eqp_title p {
+        font-family: 'Raleway';
+        font-weight: 300;
+        letter-spacing: 2px;
+        color: #FFF3CE;
+        font-size: 13px;
+        padding: 10vh 4vh;
+    }
+    
+    #actualites_title h1 {
+        font-size: 20px;
+    }
+    
+    #actualites_title {
+        height: 20vh !important;
+    }
+    #actualites_container {
+        margin: 2% auto !important;
+    }
+    #actualites_container p {
+        padding: 0 2%;
+        font-size: 13px !important;
+        letter-spacing: 2px;
+    }
+}
+
+@media (max-width: 1210px) {
+    
+    /*--------------------- HEADER -------------------*/
+    
+    #block_logo_header img {
+        height: 45px;
+        margin-right: 45px;
+        margin-bottom: 10px;
+    }
+    
+    #block_nav_header a {
+        color: #FFF3CE;
+        font-family: 'Raleway', sans-serif;
+        font-size: 13px;
+        letter-spacing: 2px;
+        margin: 0 0 0 45px;
+        transition-duration: 0.7s;
+    }
+    
+    /*--------------------- PAGE D'ACCUEIL -------------------*/
+    
+    #contenu_box_acc h1 {
+        color: #231F20;
+        font-family: 'Raleway', sans-serif;
+        font-size: 20px;
+        font-weight: 800;
+        letter-spacing: 2px;
+        margin: 0;
+    }
+    #contenu_box_acc p {
+        color: #231F20;
+        font-family: 'Raleway', sans-serif;
+        font-size: 14.5px;
+        font-weight: 400;
+        letter-spacing: 2px;
+        padding: 0;
+        margin-top: 2vh;
+        margin-bottom: 4vh;
+    }
+    #contenu_box_acc a {
+        color: #FFF3CE;
+        font-family: 'Raleway', sans-serif;
+        font-size: 13px;
+        font-weight: 500;
+        letter-spacing: 2px;
+        border: 2px solid #231F20;
+        padding: 10px 55px;
+        border-radius: 15px;
+        background-color: #231F20;
+        transition-duration: 0.7s;
+    }
+    #box_blur {
+        width: 550px;
+        height: 230px;
+        position: relative;
+        overflow: hidden;
+    }
+    #profile {
+        width: 550px;
+        height: 230px;
+        position: relative;
+        top: -330px;
+        border-radius: 8px;
+    }
+    #facebook_div svg {
+        height: 20px;
+        fill: #FFF3CE;
+        padding-left: 10px;
+        align-self: center;
+    }
+    footer p {
+        font-family: 'Raleway';
+        letter-spacing: 2px;
+        font-size: 13px;
+    }
+    
+    /*--------------------- CONTACT -------------------*/
+    
+    
+    #map {
+        height: 100%;
+        width: 50%;
+    }
+    
+    #ctc_info {
+        height: 100%;
+        width: 50%;
+        background-color: #231F20;
+        padding: 8vh 0 0 6vh;
+    }
+    #responsiveColumnAdapt {
+        display: flex;
+        flex-direction: row;
+    }
+    #contact_title p, .hr_calendar, #contact_phone p, #contact_location p {
+        font-size: 13px;
+    }
+    #contact_title h1 {
+        font-size: 20px;
+    }
+    #calendar_svg {
+        fill: #FFF3CE;
+        height: 30px;
+        width: 30px;
+        padding: 0;
+    }
+    #phone_svg {
+        fill: #FFF3CE;
+        height: 22px;
+        width: 22px;
+        padding: 0;
+    }
+    #location_svg {
+        fill: #FFF3CE;
+        height: 30px;
+        width: 30px;
+        padding: 0;
+    }
+    .column_day {
+        display: flex;
+        flex-direction: column;
+        margin-left: 44px;
+    }
+    
+    /*--------------------- CONTACT -------------------*/
+    
+    
+    #carte_title svg {
+        fill: #FFF3CE;
+        width: 35px;
+    }
+
+    #carte_title h1 {
+        font-family: 'Raleway';
+        font-weight: 700;
+        letter-spacing: 2px;
+        color: #FFF3CE;
+        font-size: 20px;
+        margin-bottom: 4vh;
+    }
+    #filter a {
+        color: #231F20;
+        font-family: 'Raleway', sans-serif;
+        font-size: 13px;
+        font-weight: 500;
+        letter-spacing: 2px;
+        border: 2px solid #FFF3CE;
+        padding: 10px 55px;
+        border-radius: 15px;
+        background-color: #FFF3CE;
+        cursor: pointer;
+    }
+    .cat_title {
+        font-size: 14px;
+    }
+    .name_tarif {
+        font-family: 'Raleway';
+        font-weight: 300;
+        letter-spacing: 2px;
+        color: #FFF3CE;
+        font-size: 13px;
+        margin: 0;
+    }
+    .price_tarif {
+        font-family: 'Raleway';
+        font-weight: 700;
+        letter-spacing: 2px;
+        color: #FFF3CE;
+        font-size: 13px;
+        margin: 0;
+    }
+    .femme_container .container_blocks {
+        width: 94%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .block_tarifs {
+        margin-bottom: 6vh;
+    }
+    .femme_container {
+        width: 100%;
+        height: 130vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .largeSpace {
+        height: 155vh !important;
+        background-color: #231F20;
+    }
+    .enfant_container {
+        width: 100%;
+        height: 50vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    /*--------------------- EQUIPE -------------------*/
+    
+    #eqp_title h1 {
+        font-family: 'Raleway';
+        font-weight: 700;
+        letter-spacing: 2px;
+        color: #FFF3CE;
+        font-size: 20px;
+    }
+    #eqp_title p {
+        font-family: 'Raleway';
+        font-weight: 300;
+        letter-spacing: 2px;
+        color: #FFF3CE;
+        font-size: 13px;
+        padding: 10vh 4vh;
+    }
+    
+    #actualites_title h1 {
+        font-size: 20px;
+    }
+    
+    #actualites_title {
+        height: 20vh !important;
+    }
+    #actualites_container {
+        margin: 2% auto !important;
+    }
+    #actualites_container p {
+        padding: 0 2%;
+        font-size: 13px !important;
+        letter-spacing: 2px;
+    }
+    
+}
+
+@media (max-width: 1110px) {
+    
+    /*--------------------- MENU RESPONSIVE MOBILE -------------------*/
+    
+    body {
+        display: block;
+    }
+    
+    #header_container {
+        display: none;
+    }
+    
+    #responsive-menu-container {
+        display: flex;
+        flex-direction: row;
+        background-color: #231F20;
+        height: 9vh;
+        width: 100%;
+        padding: 2vh 3vh 1.5vh 2vh;
+        top: 0;
+    }
+    
+    .navbar-header {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    #logo-responsive-menu img {
+        width: 220px;
+    }
+    
+    #logo-Inresponsive-menu {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 12vh;
+        width: 100%;
+    }
+    
+    #logo-Inresponsive-menu img {
+        width: 350px;
+    }
+    
+    .toggle-button {
+        padding: 9px 10px;
+        margin: 0 15px 8px 0;
+        height: 30px;
+        width: 45px;
+        cursor: pointer;
+        z-index: 999;
+        position: absolute;
+        left: 2vh;
+    }
+
+    .bar {
+        background-color: #FFF3CE;
+        display: block;
+        width: 100%;
+        height: 2px;
+        border: 0;
+        -webkit-transition: all .35s ease;
+        transition: all .35s ease;
+    }
+    .bar + .bar {
+        margin-top: 7px;
+    }
+    .middle {
+        top: 11px;
+    }
+    .bottom {
+        top: 22px;
+    }
+    .toggle-button:hover {
+        opacity: .7;
+    }
+    .toggle-active .bar {
+        background-color: #FFF3CE;
+    }
+    .toggle-active .top {
+        -webkit-transform: translateY(6px) translateX(0) rotate(45deg);
+    }
+    .toggle-active .middle {
+       opacity: 0;
+    }
+    .toggle-active .bottom {
+        -webkit-transform: translateY(-12px) translateX(0) rotate(-45deg);
+    }
+
+    .overlay {
+        position: fixed;
+        background-color: #231F20;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 0;
+        visibility: hidden;
+        opacity: 0;
+        -webkit-transition: opacity .35s, visibility .35s, height .35s;
+    }
+    .nav-active {
+        opacity: 1;
+        visibility: visible;
+        height: 100%;
+        z-index: 444;
+    }
+    .overlay ul {
+        display: block;
+        position: relative;
+        top: 8vh;
+        left: 0;
+        font-size: 16px;
+        font-weight: 300;
+        text-align: center;
+        list-style: none;
+        padding: 0;
+    }
+    .overlay ul li {
+        display: block;
+        padding-bottom: 5vh;       
+    }
+    .overlay ul li a {
+        text-decoration: none;
+        color: #FFF3CE;
+        font-family: 'Raleway', sans-serif;
+        font-size: 15px;
+        letter-spacing: 2px;
+    }
+}
+
+@media (max-width: 1000px) {
+    /*--------------------- MENU RESPONSIVE MOBILE -------------------*/
+    
+    body {
+        display: block;
+    }
+    
+    #header_container {
+        display: none;
+    }
+    
+    #responsive-menu-container {
+        display: flex;
+        flex-direction: row;
+        background-color: #231F20;
+        height: 8vh;
+        width: 100%;
+        padding: 2vh 3vh 1.5vh 2vh;
+        top: 0;
+    }
+    
+    .navbar-header {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    #logo-responsive-menu img {
+        width: 240px;
+    }
+    
+    #logo-Inresponsive-menu {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 12vh;
+        width: 100%;
+    }
+    
+    #logo-Inresponsive-menu img {
+        width: 400px;
+    }
+    
+    .toggle-button {
+        padding: 9px 10px;
+        margin: 0 15px 8px 0;
+        height: 30px;
+        width: 45px;
+        cursor: pointer;
+        z-index: 999;
+        position: absolute;
+        left: 2vh;
+    }
+
+    .bar {
+        background-color: #FFF3CE;
+        display: block;
+        width: 100%;
+        height: 2px;
+        border: 0;
+        -webkit-transition: all .35s ease;
+        transition: all .35s ease;
+    }
+    .bar + .bar {
+        margin-top: 7px;
+    }
+    .middle {
+        top: 11px;
+    }
+    .bottom {
+        top: 22px;
+    }
+    .toggle-button:hover {
+        opacity: .7;
+    }
+    .toggle-active .bar {
+        background-color: #FFF3CE;
+    }
+    .toggle-active .top {
+        -webkit-transform: translateY(6px) translateX(0) rotate(45deg);
+    }
+    .toggle-active .middle {
+       opacity: 0;
+    }
+    .toggle-active .bottom {
+        -webkit-transform: translateY(-12px) translateX(0) rotate(-45deg);
+    }
+
+    .overlay {
+        position: fixed;
+        background-color: #231F20;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 0;
+        visibility: hidden;
+        opacity: 0;
+        -webkit-transition: opacity .35s, visibility .35s, height .35s;
+    }
+    .nav-active {
+        opacity: 1;
+        visibility: visible;
+        height: 100%;
+        z-index: 444;
+    }
+    .overlay ul {
+        display: block;
+        position: relative;
+        top: 8vh;
+        left: 0;
+        font-size: 18px;
+        font-weight: 300;
+        text-align: center;
+        list-style: none;
+        padding: 0;
+    }
+    .overlay ul li {
+        display: block;
+        padding-bottom: 5vh;       
+    }
+    .overlay ul li a {
+        text-decoration: none;
+        color: #FFF3CE;
+        font-family: 'Raleway', sans-serif;
+        font-size: 18px;
+        letter-spacing: 2px;
+    }
+    
+    
+    /*--------------------- PAGE D'ACCUEIL - TABLETTE -------------------*/
+    
+    footer {
+        height: 7.5vh !important;
+    }
+    
+    #siteURL {
+        display: none;
+    }
+    #footer_container {
+        width: 100% !important;
+        height: 100%;
+    }
+    
+    /*--------------------- PAGE CONTACT - TABLETTE -------------------*/
+    
+    
+    #ctc_block {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+    #map {
+        height: 30%;
+        width: 100%;
+    }
+    #ctc_info {
+        height: 70%;
+        width: 100%;
+        background-color: #231F20;
+        padding: 4vh 8vh 0 8vh;
+    }
+    #responsiveColumnAdapt {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+    }
+    #contact_calendar, #contact_phone, #contact_location {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-top: 8.5vh;
+    }
+    
+    /*--------------------- PAGE CARTE - TABLETTE -------------------*/
+    
+    #filter {
+        width: 92%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .femme_container .container_blocks {
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .femme_container {
+        width: 100%;
+        height: 180vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .row_tarif {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        margin-bottom: 2vh;
+    }
+    .largeSpace {
+        height: 202vh;
+        background-color: #231F20;
+    }
+    .block_tarifs {
+        margin-bottom: 5vh;
+    }
+    .container_blocks {
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .homme_container {
+        width: 100%;
+        height: 60vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .container_blocks_enfant {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 60%;
+    }
+    .enfant_container {
+        width: 100%;
+        height: 50vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    /*--------------------- PAGE EQUIPE - TABLETTE -------------------*/
+    
+    #photo_equipe {
+        height: 55%;
+        width: 100%;
+    }
+    #eqp_info {
+        height: 45%;
+        width: 100%;
+        background-color: #231F20;
+        padding: 4vh 8vh 0 8vh;
+    }
+    #eqp_title p {
+        font-family: 'Raleway';
+        font-weight: 300;
+        letter-spacing: 2px;
+        color: #FFF3CE;
+        font-size: 15px;
+        padding: 5vh;
+    }
+    
+    /*--------------------- PAGE PARTENAIRE - TABLETTE -------------------*/
+    
+    #svgWella {
+        width: 18vh;
+        height: 35vh;
+        margin-left: 3vh;
+        margin-right: 8vh;
+        transition-duration: 0.7s;
+    }
+    #svgGHD {
+        width: 28vh;
+        height: 35vh;
+        margin-right: 3vh;
+        transition-duration: 0.7s;
+    }
+    
+    /*--------------------- PAGE ACTUALITE - TABLETTE -------------------*/
+    
+    #actualites_container p {
+        padding: 0 2%;
+        font-size: 18px;
+        letter-spacing: 2px;
+        margin-bottom: 0;
+    }
+    #photo_Salon_Actu {
+        width: 52% !important;
+        margin: 0 auto;
+    }
+    #actualites_container {
+        display: flex;
+        flex-direction: column;
+    }
+}
+@media (max-width: 540px) {
+    /*--------------------- MENU RESPONSIVE MOBILE -------------------*/
+    
+    body {
+        display: block;
+    }
+    
+    #header_container {
+        display: none;
+    }
+    
+    #responsive-menu-container {
+        display: flex;
+        flex-direction: row;
+        background-color: #231F20;
+        height: 9vh;
+        width: 100%;
+        padding: 2vh 3vh 1.5vh 2vh;
+        top: 0;
+    }
+    
+    .navbar-header {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    #logo-responsive-menu img {
+        width: 185px;
+    }
+    
+    #logo-Inresponsive-menu {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 12vh;
+        width: 100%;
+    }
+    
+    #logo-Inresponsive-menu img {
+        width: 280px;
+    }
+    
+    .toggle-button {
+        padding: 9px 10px;
+        margin: 0 15px 8px 0;
+        height: 30px;
+        width: 45px;
+        cursor: pointer;
+        z-index: 999;
+        position: absolute;
+        left: 2vh;
+    }
+
+    .bar {
+        background-color: #FFF3CE;
+        display: block;
+        width: 100%;
+        height: 2px;
+        border: 0;
+        -webkit-transition: all .35s ease;
+        transition: all .35s ease;
+    }
+    .bar + .bar {
+        margin-top: 7px;
+    }
+    .middle {
+        top: 11px;
+    }
+    .bottom {
+        top: 22px;
+    }
+    .toggle-button:hover {
+        opacity: .7;
+    }
+    .toggle-active .bar {
+        background-color: #FFF3CE;
+    }
+    .toggle-active .top {
+        -webkit-transform: translateY(6px) translateX(0) rotate(45deg);
+    }
+    .toggle-active .middle {
+       opacity: 0;
+    }
+    .toggle-active .bottom {
+        -webkit-transform: translateY(-12px) translateX(0) rotate(-45deg);
+    }
+
+    .overlay {
+        position: fixed;
+        background-color: #231F20;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 0;
+        visibility: hidden;
+        opacity: 0;
+        -webkit-transition: opacity .35s, visibility .35s, height .35s;
+    }
+    .nav-active {
+        opacity: 1;
+        visibility: visible;
+        height: 100%;
+        z-index: 444;
+    }
+    .overlay ul {
+        display: block;
+        position: relative;
+        top: 6vh;
+        left: 0;
+        font-size: 18px;
+        font-weight: 300;
+        text-align: center;
+        list-style: none;
+        padding: 0;
+    }
+    .overlay ul li {
+        display: block;
+        padding-bottom: 5vh;       
+    }
+    .overlay ul li a {
+        text-decoration: none;
+        color: #FFF3CE;
+        font-family: 'Raleway', sans-serif;
+        font-size: 18px;
+        letter-spacing: 2px;
+    }
+    
+    /*--------------------- PAGE ACCUEIL - MOBILE -------------------*/
+    
+    #box_blur {
+        width: 95%;
+        height: 280px;
+    }
+    
+    #blur {
+        background: url(../img/le-salon-interieur.jpg) no-repeat center center fixed;
+        background-size: cover;
+        width: 110%;
+        height: 330px;
+        position: relative;
+        top: -15px;
+        left: -15px;
+        -webkit-filter: blur(8px);
+        -moz-filter: blur(8px);
+        filter: blur(8px);
+    }
+    
+    #color_white {
+        background: rgba(255, 255, 255, .60);
+        width: 100%;
+        height: 330px;
+    }
+    
+    #profile {
+        width: 100%;
+        height: 300px;
+        position: relative;
+        top: -330px;
+        border-radius: 8px;
+    }
+    #contenu_box_acc h1 {
+        font-size: 2.6vh;
+        text-align: center;
+    }
+    #contenu_box_acc p {
+        font-size: 1.85vh;
+        text-align: center;
+    }
+    #contenu_box_acc a {
+        color: #FFF3CE;
+        font-family: 'Raleway', sans-serif;
+        font-size: 13px;
+        font-weight: 500;
+        letter-spacing: 2px;
+        border: 2px solid #231F20;
+        padding: 12px 60px;
+        border-radius: 15px;
+        background-color: #231F20;
+        transition-duration: 0.7s;
+    }
+    #contenu_box_acc p {
+        margin-bottom: 5vh;
+    }
+    
+    /*--------------------- FOOTER - MOBILE -------------------*/
+    
+    footer {
+        height: 6.5vh !important;
+    }
+    #copyright_div, #siteURL {
+        display: none !important;
+    }
+    #footer_container {
+        width: 100% !important;
+        height: 100%;
+    }
+    footer p {
+        font-size: 14px;
+    }
+    
+    /*--------------------- PAGE NOUS CONTACTER - MOBILE -------------------*/
+    
+    #map {
+        display: none;
+    }
+    
+    #responsiveColumnAdapt {
+        display: flex;
+        flex-direction: column;
+    }
+    #ctc_info {
+        height: 100%;
+        width: 100%;
+        background-color: #231F20;
+        padding: 5vh 4vh 0 4vh;
+    }
+    
+    .day_calendar {
+        font-family: 'Raleway';
+        font-weight: 700;
+        letter-spacing: 2px;
+        color: #FFF3CE;
+        font-size: 16px;
+        margin: 0;
+        margin-bottom: 0;
+    }
+    .column_day {
+        display: flex;
+        flex-direction: column;
+        margin-left: 8vh;
+        margin-bottom: 4vh;
+    }
+    #contact_calendar {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-top: 8vh;
+    }
+    #contact_phone {
+        margin-top: 3vh;
+    }
+    #contact_location {
+        margin-top: 6vh;
+    }
+    #contact_phone p, #contact_location p {
+        margin-left: 8vh;
+    }
+    #location_svg {
+        width: 55px;
+    }
+    #contact_title {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #contact_title p {
+        margin: 0;
+    }
+    
+    /*--------------------- PAGE EQUIPE - MOBILE -------------------*/
+    
+    #ctc_block {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+    #eqp_info {
+        height: 100%;
+        width: 100%;
+        background-color: #231F20;
+        padding: 5vh 4vh 0 4vh;
+    }
+    #eqp_title p {
+        padding: 2vh;
+    }
+    #photo_equipe {
+        height: 100%;
+        width: 100%;
+    }
+    
+    /*--------------------- PAGE CARTE - MOBILE -------------------*/
+    
+    #carte_title h1 {
+        font-size: 20px;
+    }
+    #filter {
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        height: 25vh;
+    }
+    
+    .femme_container {
+        width: 100%;
+        height: 235vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .femme_container .container_blocks {
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .largeSpace {
+        height: 280vh !important;
+        background-color: #231F20;
+    }
+    .row_tarif {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        margin-bottom: 2vh;
+    }
+    .block_tarifs {
+        margin-bottom: 10vh;
+    }
+    .name_tarif {
+        width: 70%;
+    }
+    
+    .carte {
+        height: 124vh;
+        background-color: #231F20;
+    }
+    .homme_container {
+        width: 100%;
+        height: 75vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .container_blocks {
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .container_blocks_enfant {
+        display: flex;
+        width: 80%;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .enfant_container {
+        width: 100%;
+        height: 52vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    /*--------------------- PAGE PARTENAIRES - MOBILE -------------------*/
+    
+    
+    #partenaires #partenaires_container {
+        display: flex;
+        flex-direction: column !important;
+        justify-content: center;
+    }
+    #line_partenaires {
+        width: 20vh;
+        height: 1px;
+        background-color: #FFF3CE;
+    }
+    #svgGHD {
+        width: 30vh;
+        height: 22vh;
+        margin-right: 0;
+    }
+    #svgWella {
+        width: 24vh;
+        height: 28vh;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    
+     /*--------------------- PAGE ACTUALITES - MOBILE -------------------*/
+    
+    #actualites_container {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        margin: 4vh auto;
+        padding: 4%;
+        background-color: #FFF3CE;
+        color: #231F20;
+        text-align: left;
+    }
+    
+    #photo_Salon_Actu {
+        width: 90% !important;
+        margin: auto;
+    }
+    
+    #actualites_container p {
+        padding: 0 2%;
+        font-size: 16px;
+        letter-spacing: 2px;
+    }
+    
+}
 
