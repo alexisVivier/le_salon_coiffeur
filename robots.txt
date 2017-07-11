@@ -1,0 +1,12 @@
+Sitemap: http://www.lessalons.fr/sitemap.xml
+
+User-agent: *
+Disallow: /footer.php
+Disallow: /header.php
+Disallow: /css/
+Disallow: /js/
+Disallow: /svg/
+Disallow: /ancienne_version/
+Allow: /img/
+
+Sitemap: http://www.lessalons.fr/sitemap.xml
